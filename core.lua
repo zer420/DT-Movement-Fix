@@ -1,6 +1,6 @@
 local weapon_dt = {"pistol", "smg", "rifle", "shotgun", "asniper", "lmg",};
 local curr_dt, hist_dt, lp, lp_wt = false, false, nil, nil;
-callbacks.Register("CreateMove", "dt check", function()
+callbacks.Register("CreateMove", "DT Movement Fix", function()
     lp = entities.GetLocalPlayer();
     lp_wt = lp:GetWeaponType();
     curr_dt = (weapon_dt[lp_wt] ~= nil and gui.GetValue("rbot.accuracy.weapon." .. weapon_dt[lp_wt] .. ".doublefire") ~= 0 or false);
