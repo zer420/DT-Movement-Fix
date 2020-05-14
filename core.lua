@@ -1,7 +1,7 @@
 local weapon_dt = {
-    [1] = "hpistol",[2] = "pistol",[3] = "pistol",[4] = "pistol",[7] = "rifle",[8] = "rifle",[10] = "rifle",[11] = "asniper",[13] = "rifle",[14] = "lmg",[16] = "rifle",
-    [17] = "smg",[19] = "smg",[23] = "smg",[24] = "smg",[25] = "shotgun",[26] = "smg",[28] = "lmg",[30] = "pistol",[32] = "pistol",[33] = "smg",[34] = "smg",
-    [36] = "pistol",[38] = "asniper",[39] = "rifle",[60] = "rifle",[61] = "pistol",[63] = "pistol",
+    [1] = "hpistol",[2] = "pistol",[3] = "pistol",[4] = "pistol",[7] = "rifle",[8] = "rifle",[10] = "rifle",[11] = "asniper",[13] = "rifle",
+    [14] = "lmg",[16] = "rifle",[17] = "smg",[19] = "smg",[23] = "smg",[24] = "smg",[25] = "shotgun",[26] = "smg",[28] = "lmg",[30] = "pistol",
+    [32] = "pistol",[33] = "smg",[34] = "smg",[36] = "pistol",[38] = "asniper",[39] = "rifle",[60] = "rifle",[61] = "pistol",[63] = "pistol",
 };
 local curr_dt, hist_dt, lp, lp_wt = false, false, nil, nil;
 callbacks.Register("CreateMove", "DT Movement Fix", function()
